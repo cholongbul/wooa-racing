@@ -1,6 +1,5 @@
 package racingcar;
-import camp.nextstep.edu.missionutils.Console;
-import camp.nextstep.edu.missionutils.Randoms;
+import racingcar.domain.Car;
 
 import java.util.List;
 
@@ -18,13 +17,8 @@ import java.util.List;
 public class Application {
 
     public static void main(String[] args) {
-        Carmaker carmaker = new Carmaker();
-        ReadLine readLine = new ReadLine();
-        String[] carnames = readLine.carName();
-        int moveCount = readLine.count();
-        List<Car> carlist = carmaker.inputCarName(carnames);
-        MoveCar mvcar = new MoveCar();
-        mvcar.run()
+        Racing racing = new Racing();
+        racing.play();
 
 
     }
